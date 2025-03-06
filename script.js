@@ -30,6 +30,6 @@ fetch('https://randomuser.me/api/')
 fetch('https://dog.ceo/api/breeds/image/random')
     .then(response => response.json())
     .then(data => {
-        document.getElementById('dogImg').src = data.message; //dog image replacer
+        dogImage.src = data.message; //dog image replacer
     })
     .catch(error => console.error('Error:', error));
